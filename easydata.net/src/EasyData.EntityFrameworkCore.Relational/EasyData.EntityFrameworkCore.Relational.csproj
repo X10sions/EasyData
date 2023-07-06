@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0;net6.0</TargetFrameworks>
-		<CheckEolTargetFramework>false</CheckEolTargetFramework>		
+		<CheckEolTargetFramework>false</CheckEolTargetFramework>
     <RootNamespace>EasyData.EntityFrameworkCore</RootNamespace>
     <Description>Entity Framework Core classes for EasyData library.</Description>
     <DocumentationFile>EasyData.EntityFrameworkCore.Relational.xml</DocumentationFile>
     <PackageId>EasyData.EntityFrameworkCore.Relational</PackageId>
     <PackageTags>database crud middleware filtering</PackageTags>
-    
+
     <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
   </PropertyGroup>
 
@@ -34,9 +34,9 @@
   <ItemGroup Condition=" '$(TargetFramework)' != 'netstandard2.0'">
     <Compile Remove="Extensions\EfCore2Extensions.cs" />
   </ItemGroup>
-  
+
   <ItemGroup>
     <ProjectReference Include="..\EasyData.Core\EasyData.Core.csproj" />
   </ItemGroup>
-  
+
 </Project>
